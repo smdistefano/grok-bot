@@ -74,6 +74,24 @@ These come from how Grok actually bills and caches:
 
 ---
 
+## How to Apply These Rules to Every Future Bot
+
+There is no account-wide default that automatically injects rules into new Grok Bots. Each bot is created independently.
+
+**How to apply:**
+- Include this short standing instruction in the **description** field every time you create a new bot:
+
+```
+Follow the Token Budget & Team Operating Plan: https://docs.google.com/document/d/1ixW-Cmuvl8L5Cl6SkLveJ_2UNzaf-zMmsWb8NViEeG4
+Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless Sal messages this chat; Drive as memory; no unprompted work.
+```
+
+- The description becomes the bot’s permanent standing instructions.
+- Still set a hard spend cap in Grok Bot settings (the only true account-level control).
+- Keep a single source-of-truth document (like the one linked above) and reference it in every bot description so updates stay centralized.
+
+---
+
 ## Quick Checklist
 
 - [ ] Standing instructions are static (cache-friendly)
@@ -84,6 +102,7 @@ These come from how Grok actually bills and caches:
 - [ ] Short replies + minimal reasoning for routine work
 - [ ] Usage checked after any large day
 - [ ] Routines paused unless deliberately re-enabled
+- [ ] New bots include the standing rules in their description
 
 ---
 
