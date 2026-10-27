@@ -90,6 +90,19 @@ Standing rules: do only what was asked; short replies; ≤5 tool calls then ask;
 - Still set a hard spend cap in Grok Bot settings (the only true account-level control).
 - Keep a single source-of-truth document (like the one linked above) and reference it in every bot description so updates stay centralized.
 
+### What happens when you give a bot the rules (example)
+
+> Follow the Token Budget & Team Operating Plan: https://docs.google.com/document/d/1ixW-Cmuvl8L5Cl6SkLveJ_2UNzaf-zMmsWb8NViEeG4  
+> Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless Sal messages this chat; Drive as memory; no unprompted work.
+
+Bot response:
+> Got it — adopting that plan as standing rules for this bot.  
+> Saved. I’ll follow that plan going forward.
+
+**Is the full document now in the bot’s context and repeated on every send and reply?**  
+No. The full doc isn’t pasted into every turn.  
+The bot saves a short standing-rules summary in its durable memory, so it keeps those constraints in mind. The Drive doc stays the source of truth if the rules need to be re-read or updated — it isn’t repeated on every send or reply.
+
 ---
 
 ## Quick Checklist
