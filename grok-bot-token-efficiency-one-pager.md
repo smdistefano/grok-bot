@@ -82,8 +82,8 @@ There is no account-wide default that automatically injects rules into new Grok 
 - Include this short standing instruction in the **description** field every time you create a new bot:
 
 ```
-Follow the Token Budget & Bot Operating Plan: https://docs.google.com/document/d/1ixW-Cmuvl8L5Cl6SkLveJ_2UNzaf-zMmsWb8NViEeG4
-Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless Sal messages this chat; Drive as memory; no unprompted work.
+Follow the Token Budget & Bot Operating Plan: https://github.com/smdistefano/grok-bot/blob/main/token-budget-bot-operating-plan.md
+Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless the operator messages this chat; a durable doc as memory; no unprompted work.
 ```
 
 - The description becomes the bot’s permanent standing instructions.
@@ -92,8 +92,8 @@ Standing rules: do only what was asked; short replies; ≤5 tool calls then ask;
 
 ### What happens when you give a bot the rules (example)
 
-> Follow the Token Budget & Bot Operating Plan: https://docs.google.com/document/d/1ixW-Cmuvl8L5Cl6SkLveJ_2UNzaf-zMmsWb8NViEeG4  
-> Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless Sal messages this chat; Drive as memory; no unprompted work.
+> Follow the Token Budget & Bot Operating Plan: https://github.com/smdistefano/grok-bot/blob/main/token-budget-bot-operating-plan.md  
+> Standing rules: do only what was asked; short replies; ≤5 tool calls then ask; no polling/retries/subagents unless asked; stay idle unless the operator messages this chat; a durable doc as memory; no unprompted work.
 
 Bot response:
 > Got it — adopting that plan as standing rules for this bot.  
@@ -101,7 +101,7 @@ Bot response:
 
 **Is the full document now in the bot’s context and repeated on every send and reply?**  
 No. The full doc isn’t pasted into every turn.  
-The bot saves a short standing-rules summary in its durable memory, so it keeps those constraints in mind. The Drive doc stays the source of truth if the rules need to be re-read or updated — it isn’t repeated on every send or reply.
+The bot saves a short standing-rules summary in its durable memory, so it keeps those constraints in mind. The plan file stays the source of truth if the rules need to be re-read or updated — it isn’t repeated on every send or reply.
 
 ---
 
